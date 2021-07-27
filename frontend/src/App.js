@@ -6,7 +6,8 @@ import Navigation from './components/Navigation'
 import NotesList from './components/NotesList'
 import CreateNote from './components/CreateNote'
 import CreateUser from './components/CreateUser'
-
+import login from './components/login'
+import signup from './components/signup'
 import './App.css';
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
         <Route path="/edit/:id" component={CreateNote} />
         <Route path="/create" component={CreateNote} />
         <Route path="/user" component={CreateUser} />
+        <Route path="/login" component={login} />
+        <Route path="/signup" component={signup} />
       </div>
     </Router>
   );
